@@ -40,7 +40,7 @@ echo "2. Subtraction (-)"
 echo "3. Multiplication (*)"
 echo "4. Division (/)"
 read -p "Enter choice (1-4): " choice
-# Perform calculation based on user choice
+clear
 case $choice in
     1)
         result=$(echo "$num1 + $num2" | bc)
@@ -66,7 +66,6 @@ case $choice in
         echo "Invalid choice! Please select a number between 1 and 4."
         ;;
 esac
-clear
 echo "Press any key to continue..."
 read -s -n 1
 bash cal.sh
