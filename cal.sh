@@ -66,6 +66,7 @@ case $choice in
         echo "Invalid choice! Please select a number between 1 and 4."
         ;;
 esac
+clear
 echo "Press any key to continue..."
 read -s -n 1
 bash cal.sh
