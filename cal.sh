@@ -32,6 +32,7 @@ while true; do
         echo "Error: Please enter a valid positive integer."
     fi
 done
+clear
 # Display operation menu
 echo "Select an operation:"
 echo "1. Addition (+)"
@@ -65,11 +66,6 @@ case $choice in
         echo "Invalid choice! Please select a number between 1 and 4."
         ;;
 esac
-echo "refreshing in"
-countdown=5
-while [ $countdown -gt 0 ]; do
-    printf "%d\r" "$countdown"
-    sleep 0.88
-    ((countdown--))
-done
+echo "Press any key to continue..."
+read -s -n 1
 bash cal.sh
