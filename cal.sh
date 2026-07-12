@@ -1,19 +1,16 @@
 #!/bin/bash
 clear
-# Check if bc is already installed
 if ! command -v bc &> /dev/null; then
     clear
     bash bc.sh
 else
     clear
 fi
-# Simple calculator script
 echo "
 █▀▀ ▄▀█ █░░
 █▄▄ █▀█ █▄▄"
 echo "A simple calculator script with addition, subtraction, multiplication & division"
 echo "Enter two numbers (positive integers):"
-# Read and validate first number
 while true; do
     echo " ctrl+c to close"
     read -p "1st number: " num1
@@ -23,7 +20,6 @@ while true; do
         echo "Error: Please enter a valid positive integer."
     fi
 done
-# Read and validate second number
 while true; do
     read -p "2nd number: " num2
     if [[ $num2 =~ ^[0-9]+$ ]]; then
@@ -33,7 +29,6 @@ while true; do
     fi
 done
 clear
-# Display operation menu
 echo "Select an operation:"
 echo "1. Addition (+)"
 echo "2. Subtraction (-)"
