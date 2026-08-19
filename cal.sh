@@ -63,5 +63,5 @@ case $choice in
 esac
 echo "Press any key to restart program..."
 read -s -n 1
-while true
+while true; do
 done
