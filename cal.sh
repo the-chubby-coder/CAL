@@ -7,6 +7,7 @@ else
     clear
 fi
 
+clear
 while true; do
     echo "
 █▀▀ ▄▀█ █░░
